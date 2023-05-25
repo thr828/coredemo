@@ -1,0 +1,14 @@
+D:\HALCON\WebApplication1\entityframework.core\bin\Debug\net6.0\entityframework.core.deps.json
+D:\HALCON\WebApplication1\entityframework.core\bin\Debug\net6.0\entityframework.core.runtimeconfig.json
+D:\HALCON\WebApplication1\entityframework.core\bin\Debug\net6.0\entityframework.core.dll
+D:\HALCON\WebApplication1\entityframework.core\bin\Debug\net6.0\entityframework.core.pdb
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\entityframework.core.csproj.AssemblyReference.cache
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\entityframework.core.GeneratedMSBuildEditorConfig.editorconfig
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\entityframework.core.AssemblyInfoInputs.cache
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\entityframework.core.AssemblyInfo.cs
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\entityframework.core.csproj.CoreCompileInputs.cache
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\entityframework.core.dll
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\refint\entityframework.core.dll
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\entityframework.core.pdb
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\entityframework.core.genruntimeconfig.cache
+D:\HALCON\WebApplication1\entityframework.core\obj\Debug\net6.0\ref\entityframework.core.dll
