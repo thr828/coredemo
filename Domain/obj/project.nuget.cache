@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FHkXTnoxJb3tDIhJwr3Zz4FzqMC6hHRiouYfffKfp/Chrqox4iT42MZ8F7O8O3arBBjCzVVk6EPGgnBB28MSFA==",
+  "dgSpecHash": "Zwewwf5a+kPt59/b4LoAIH+cSzFZzibVCTB6H99c0OGJZEGzJC1i++cgSIl1fmc+ehVYUwLmOxPv94w9+N7+cw==",
   "success": true,
-  "projectFilePath": "D:\\HALCON\\WebApplication1\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\HALCON\\coredemo\\coredemo\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fufmxFOFUpswX16NRT/iasNoOjXZprVuJZ/1nkN1G/yCSeeg978Ssy+RDBVpmlnkBVvfmGoRwajYmVjnMKkELA==",
+  "dgSpecHash": "kLkSzJoOCuZI+/zeJmjMMC3ciT8YaydWhJkb62GTQKR19hjiBM63vR0xKNpXGbrqeR7M3jz9oXbH5GzvtjG0ww==",
   "success": true,
-  "projectFilePath": "D:\\HALCON\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "D:\\HALCON\\coredemo\\coredemo\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\59204\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\59204\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

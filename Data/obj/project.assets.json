@@ -1159,11 +1159,24 @@
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DTO": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
         }
       }
     }
@@ -3515,6 +3528,11 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3534,11 +3552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HALCON\\WebApplication1\\Data\\Data.csproj",
+      "projectUniqueName": "D:\\HALCON\\coredemo\\coredemo\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "D:\\HALCON\\WebApplication1\\Data\\Data.csproj",
+      "projectPath": "D:\\HALCON\\coredemo\\coredemo\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\59204\\.nuget\\packages\\",
-      "outputPath": "D:\\HALCON\\WebApplication1\\Data\\obj\\",
+      "outputPath": "D:\\HALCON\\coredemo\\coredemo\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -3561,8 +3579,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\HALCON\\WebApplication1\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\HALCON\\WebApplication1\\Domain\\Domain.csproj"
+            "D:\\HALCON\\coredemo\\coredemo\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\HALCON\\coredemo\\coredemo\\Domain\\Domain.csproj"
             }
           }
         }

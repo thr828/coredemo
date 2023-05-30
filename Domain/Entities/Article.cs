@@ -6,18 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Domain.Entities
 {
     [Table("T_Acticle")]
-    public class Article:BaseModel
+    public class Article : BaseModel
     {
         [Required]
         public string? Title { get; set; }
         public string? Description { get; set; }
         [Required]
-        public string? Author { get; set; } 
+        public string? Author { get; set; }
 
         public int Version { get; set; }
-                  
+
     }
 }

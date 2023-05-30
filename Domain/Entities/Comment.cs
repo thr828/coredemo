@@ -6,12 +6,12 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Domain.Entities
 {
     public class Comment : BaseModel
     {
         [Required]
-        public string? Content {get;set;}
+        public string? Content { get; set; }
         [IgnoreDataMember]
         public Article? BeArticle { get; set; }
     }
