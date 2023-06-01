@@ -18,8 +18,13 @@ builder.Services.AddDbContext<MyContext>(optionsaction => {
     .EnableDetailedErrors();
 });
 
+builder.Services.AddStackExchangeRedisCache(
+    options => options.Configuration = 
+        builder.Configuration.GetConnectionString("RedisConnectionStrings")
+    );
+
 builder.Services.AddAutoMapper(typeof(DataMappingProfile));
-builder.Services.RegisterDependencies();
+builder.Services.RegisterDependencies();//DI
 
 var app = builder.Build();
 

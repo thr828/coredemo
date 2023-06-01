@@ -178,3 +178,9 @@ D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\IOC.pdb
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Mapper.dll
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Mapper.pdb
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\StackExchange.Redis.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Newtonsoft.Json.dll
