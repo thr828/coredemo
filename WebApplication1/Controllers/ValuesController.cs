@@ -14,7 +14,7 @@ namespace WebApplication1.Controllers
     public class ValuesController : ControllerBase
     {
         private readonly IArtcleService _artcleService;
-        private readonly IDistributedCache _distributedCache;
+        private readonly IDistributedCache _distributedCache;//分布式缓存接口
 
         public ValuesController(IArtcleService artcleService, IDistributedCache distributedCache)
         {
