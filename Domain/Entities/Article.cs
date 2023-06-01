@@ -19,5 +19,6 @@ namespace Domain.Entities
 
         public int Version { get; set; }
 
+
     }
 }

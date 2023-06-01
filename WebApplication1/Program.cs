@@ -1,4 +1,7 @@
 using Data;
+using IOC;
+using Mapper;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -14,6 +17,9 @@ builder.Services.AddDbContext<MyContext>(optionsaction => {
     .EnableSensitiveDataLogging()
     .EnableDetailedErrors();
 });
+
+builder.Services.AddAutoMapper(typeof(DataMappingProfile));
+builder.Services.RegisterDependencies();
 
 var app = builder.Build();
 

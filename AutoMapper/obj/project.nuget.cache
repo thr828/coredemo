@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "37PsSfPVUoONC7gikf2lcCO3mMqqZnOmrica+QD29wFNJlX77fsyUNjC9oU5tjZirD+PEo2P2l67ITNvtU+nAg==",
+  "success": true,
+  "projectFilePath": "D:\\HALCON\\coredemo\\coredemo\\AutoMapper\\Mapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\59204\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\59204\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

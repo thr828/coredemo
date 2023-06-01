@@ -1,0 +1,17 @@
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\Mapper.csproj.AssemblyReference.cache
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\Mapper.GeneratedMSBuildEditorConfig.editorconfig
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\Mapper.AssemblyInfoInputs.cache
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\Mapper.AssemblyInfo.cs
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\Mapper.csproj.CoreCompileInputs.cache
+D:\HALCON\coredemo\coredemo\AutoMapper\bin\Debug\net6.0\Mapper.deps.json
+D:\HALCON\coredemo\coredemo\AutoMapper\bin\Debug\net6.0\Mapper.dll
+D:\HALCON\coredemo\coredemo\AutoMapper\bin\Debug\net6.0\Mapper.pdb
+D:\HALCON\coredemo\coredemo\AutoMapper\bin\Debug\net6.0\Domain.dll
+D:\HALCON\coredemo\coredemo\AutoMapper\bin\Debug\net6.0\DTO.dll
+D:\HALCON\coredemo\coredemo\AutoMapper\bin\Debug\net6.0\Domain.pdb
+D:\HALCON\coredemo\coredemo\AutoMapper\bin\Debug\net6.0\DTO.pdb
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\Mapper.csproj.CopyComplete
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\Mapper.dll
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\refint\Mapper.dll
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\Mapper.pdb
+D:\HALCON\coredemo\coredemo\AutoMapper\obj\Debug\net6.0\ref\Mapper.dll

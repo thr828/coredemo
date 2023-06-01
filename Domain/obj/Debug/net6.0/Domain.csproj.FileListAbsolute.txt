@@ -13,11 +13,14 @@ D:\HALCON\WebApplication1\Domain\obj\Debug\net6.0\ref\Domain.dll
 D:\HALCON\coredemo\coredemo\Domain\bin\Debug\net6.0\Domain.deps.json
 D:\HALCON\coredemo\coredemo\Domain\bin\Debug\net6.0\Domain.dll
 D:\HALCON\coredemo\coredemo\Domain\bin\Debug\net6.0\Domain.pdb
+D:\HALCON\coredemo\coredemo\Domain\bin\Debug\net6.0\DTO.dll
+D:\HALCON\coredemo\coredemo\Domain\bin\Debug\net6.0\DTO.pdb
 D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
 D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
 D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
 D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\Domain.csproj.CopyComplete
 D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\Domain.dll
 D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\refint\Domain.dll
 D:\HALCON\coredemo\coredemo\Domain\obj\Debug\net6.0\Domain.pdb

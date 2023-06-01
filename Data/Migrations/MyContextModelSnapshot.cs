@@ -22,7 +22,7 @@ namespace Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Domain.Article", b =>
+            modelBuilder.Entity("Domain.Entities.Article", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -63,61 +63,61 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("c78f2172-a0c5-4db1-94cc-b92e71abf9fa"),
+                            Id = new Guid("cfb10e8b-66ac-4fd6-ac13-9febef9d680f"),
                             Author = "jack",
-                            CreateTime = new DateTime(2023, 5, 24, 11, 21, 23, 6, DateTimeKind.Local).AddTicks(3485),
+                            CreateTime = new DateTime(2023, 5, 30, 14, 43, 36, 141, DateTimeKind.Local).AddTicks(3548),
                             CreateUser = "admin",
                             Description = "crm",
                             Title = "迅达crm",
-                            UpdateTime = new DateTime(2023, 5, 24, 11, 21, 23, 6, DateTimeKind.Local).AddTicks(3495),
+                            UpdateTime = new DateTime(2023, 5, 30, 14, 43, 36, 141, DateTimeKind.Local).AddTicks(3557),
                             UpdateUser = "admin",
                             Version = 0
                         },
                         new
                         {
-                            Id = new Guid("60431df2-0048-4545-848a-49f226e116ce"),
+                            Id = new Guid("24d3dd6a-5b98-4370-b18f-d237bc565909"),
                             Author = "jimmiy",
-                            CreateTime = new DateTime(2023, 5, 24, 11, 21, 23, 6, DateTimeKind.Local).AddTicks(3522),
+                            CreateTime = new DateTime(2023, 5, 30, 14, 43, 36, 141, DateTimeKind.Local).AddTicks(3582),
                             CreateUser = "admin",
                             Description = "efrqc",
                             Title = "efrqc",
-                            UpdateTime = new DateTime(2023, 5, 24, 11, 21, 23, 6, DateTimeKind.Local).AddTicks(3522),
+                            UpdateTime = new DateTime(2023, 5, 30, 14, 43, 36, 141, DateTimeKind.Local).AddTicks(3583),
                             UpdateUser = "admin",
                             Version = 0
                         },
                         new
                         {
-                            Id = new Guid("6a120b42-95ae-49a3-ac38-bf0018099fc7"),
+                            Id = new Guid("7d07c8a5-8b6d-484c-9a98-d5daf0caf46c"),
                             Author = "rock",
-                            CreateTime = new DateTime(2023, 5, 24, 11, 21, 23, 6, DateTimeKind.Local).AddTicks(3534),
+                            CreateTime = new DateTime(2023, 5, 30, 14, 43, 36, 141, DateTimeKind.Local).AddTicks(3584),
                             CreateUser = "admin",
                             Description = "tuoxin",
                             Title = "tuoxin",
-                            UpdateTime = new DateTime(2023, 5, 24, 11, 21, 23, 6, DateTimeKind.Local).AddTicks(3535),
+                            UpdateTime = new DateTime(2023, 5, 30, 14, 43, 36, 141, DateTimeKind.Local).AddTicks(3585),
                             UpdateUser = "admin",
                             Version = 0
                         },
                         new
                         {
-                            Id = new Guid("14d6c176-bb69-41dd-addf-188b8e2ff605"),
+                            Id = new Guid("e7ac03aa-f212-47f7-b7a4-85aaf9a5866b"),
                             Author = "john",
-                            CreateTime = new DateTime(2023, 5, 24, 11, 21, 23, 6, DateTimeKind.Local).AddTicks(3536),
+                            CreateTime = new DateTime(2023, 5, 30, 14, 43, 36, 141, DateTimeKind.Local).AddTicks(3586),
                             CreateUser = "admin",
                             Description = "good",
                             Title = "good",
-                            UpdateTime = new DateTime(2023, 5, 24, 11, 21, 23, 6, DateTimeKind.Local).AddTicks(3537),
+                            UpdateTime = new DateTime(2023, 5, 30, 14, 43, 36, 141, DateTimeKind.Local).AddTicks(3587),
                             UpdateUser = "admin",
                             Version = 0
                         });
                 });
 
-            modelBuilder.Entity("Domain.Comment", b =>
+            modelBuilder.Entity("Domain.Entities.Comment", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("BeArticleId")
+                    b.Property<Guid?>("ArticleId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Content")
@@ -140,18 +140,18 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BeArticleId");
+                    b.HasIndex("ArticleId");
 
                     b.ToTable("Comment", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Comment", b =>
+            modelBuilder.Entity("Domain.Entities.Comment", b =>
                 {
-                    b.HasOne("Domain.Article", "BeArticle")
+                    b.HasOne("Domain.Entities.Article", "Article")
                         .WithMany()
-                        .HasForeignKey("BeArticleId");
+                        .HasForeignKey("ArticleId");
 
-                    b.Navigation("BeArticle");
+                    b.Navigation("Article");
                 });
 #pragma warning restore 612, 618
         }

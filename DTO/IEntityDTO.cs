@@ -1,6 +1,6 @@
 ﻿namespace DTO
 {
-    public interface TEntityDTO
+    public interface IEntityDTO
     {
         DateTime CreatedAt { get; set; }
         bool Active { get; set; }

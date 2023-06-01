@@ -148,8 +148,10 @@ D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\runtimes\browser\li
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Data.dll
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Domain.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\DTO.dll
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Data.pdb
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Domain.pdb
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\DTO.pdb
 D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\WebApplication1.csproj.AssemblyReference.cache
 D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
 D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\WebApplication1.AssemblyInfoInputs.cache
@@ -170,3 +172,9 @@ D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\refint\WebApplicati
 D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\WebApplication1.pdb
 D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\WebApplication1.genruntimeconfig.cache
 D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\ref\WebApplication1.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\AutoMapper.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\IOC.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\IOC.pdb
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Mapper.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Mapper.pdb

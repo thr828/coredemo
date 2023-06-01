@@ -11,7 +11,7 @@ namespace Domain.Interfaces.Repositories
     {
         void Add(DTO entity);
         DTO GetById(int id);
-        IEnumerable<DTO> GetAll();
+        IEnumerable<TEntity> GetAll();
         void Update(DTO entity);
         void Delete(int id);
 
