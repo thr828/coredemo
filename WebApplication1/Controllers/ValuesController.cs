@@ -26,7 +26,7 @@ namespace WebApplication1.Controllers
         public IEnumerable<ArticleDTO> Get()
         {
 
-            var list = GetShoppingCarts();
+           // var list = GetShoppingCarts();
             ShoppingCart shoppingCart = new ShoppingCart()
             {
                 Gid = 3,
@@ -42,7 +42,8 @@ namespace WebApplication1.Controllers
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public bool  AddGoods(ShoppingCart s)
+        
+        private bool  AddGoods(ShoppingCart s)
         {
             //先定义List列表  因为返回的数据也是放入列表中的便于后面查询，所以添加的也应该是列表
             List<ShoppingCart> list = new List<ShoppingCart>();
@@ -78,7 +79,8 @@ namespace WebApplication1.Controllers
                     }
                     //将修改后的数据所在的整个对象序列化字符串 添加到redis中
                     var json = JsonConvert.SerializeObject(listDes);
-                    _distributedCache.SetString("ShoppingCart", json,new DistributedCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromSeconds(15)));
+                    _distributedCache.SetString("ShoppingCart", json);
+                    //  _distributedCache.SetString("ShoppingCart", json,new DistributedCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromSeconds(15)));
                 }
                 //不存在 添加新的数据到购物车
                 else
@@ -99,7 +101,7 @@ namespace WebApplication1.Controllers
             return true;
         }
 
-        public List<ShoppingCart> GetShoppingCarts()
+        private List<ShoppingCart> GetShoppingCarts()
         {
             //去Redis中查找数据  //根据键名查找  获取的Key为一个数组列表格式
             string? key = _distributedCache.GetString("ShoppingCart");

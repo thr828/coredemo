@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "8p0nUUuBwi+kYZNzo4TSN/+ZRRu9G6QUt5g4RyfVIPg=",
+  "Source": "WebApplication1",
+  "BasePath": "_content/WebApplication1",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication1\\wwwroot",
+      "Source": "WebApplication1",
+      "ContentRoot": "D:\\HALCON\\coredemo\\coredemo\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+D:\HALCON\coredemo\coredemo\DTO\bin\Release\net6.0\DTO.deps.json
+D:\HALCON\coredemo\coredemo\DTO\bin\Release\net6.0\DTO.dll
+D:\HALCON\coredemo\coredemo\DTO\bin\Release\net6.0\DTO.pdb
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\DTO.csproj.AssemblyReference.cache
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\DTO.AssemblyInfoInputs.cache
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\DTO.AssemblyInfo.cs
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\DTO.csproj.CoreCompileInputs.cache
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\DTO.dll
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\refint\DTO.dll
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\DTO.pdb
+D:\HALCON\coredemo\coredemo\DTO\obj\Release\net6.0\ref\DTO.dll
