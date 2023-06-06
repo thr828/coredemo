@@ -20,7 +20,7 @@ namespace WebApplication1.Controllers
 
         [Route("~/checkAccountWithTrans")]
         [HttpPost]
-        public async Task<IActionResult> PublishMessageWithTransaction([FromServices] MyContext dbContext)
+        public async Task<IActionResult> PublishMessageWithTransaction([FromServices] MyContext dbContext)//FromServices DI
         {
             using (var trans = dbContext.Database.BeginTransaction())
             {            //指定发送的消息标题（供订阅）和内容
@@ -34,6 +34,7 @@ namespace WebApplication1.Controllers
         [CapSubscribe("xxx.services.account.check")]
         public Task CheckReceivedMessage(Person person)
         {
+            //throw new Exception("抛出异常！");
             Console.WriteLine(person.Name);
             Console.WriteLine(person.Age);
             return Task.CompletedTask;

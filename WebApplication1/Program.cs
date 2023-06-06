@@ -45,6 +45,23 @@ builder.Services.AddCap(x => {
     //如果你使用的 Kafka 作为MQ，你需要添加如下配置：
     //x.UseKafka("localhost：9092");
     x.UseDashboard();
+    //默认分组名，此值不配置时，默认值为当前程序集的名称
+    //x.DefaultGroup = "m";
+    //失败后的重试次数，默认50次；在FailedRetryInterval默认60秒的情况下，即默认重试50*60秒(50分钟)之后放弃失败重试
+    //x.FailedRetryCount = 10;
+
+    //失败后的重拾间隔，默认60秒
+    //x.FailedRetryInterval = 30;
+
+    //设置成功信息的删除时间默认24*3600秒
+    //x.SucceedMessageExpiredAfter = 60 * 60;
+
+    //这里通过发邮件、短信等信息通知人工处理，系统不能自动搞定了
+    x.FailedThresholdCallback = AsyncCallback =>
+    {
+        Console.WriteLine("需要人工处理了");
+    };
+   // 设置发送消息的线程数据，大于1之后，不保证消息顺序 / a ProducerThreadCount = 1:/ 成功消息保存的时间，以秒为单位，默认是1天 / a.SucceedMessageExpiredAfter = 12 * 3600;
 });
 
 builder.Services.AddSwaggerGen(option =>
