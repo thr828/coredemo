@@ -7,7 +7,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "dotnetRunMessages": true,
+      "dotnetRunMessages": true, //指示当使用 dotnet run 命令时，终端能够及时响应并输出消息
       "applicationUrl": "http://localhost:5180"
     },
     "IIS Express": {
