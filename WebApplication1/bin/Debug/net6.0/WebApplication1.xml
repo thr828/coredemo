@@ -5,5 +5,13 @@
     </assembly>
     <members>
         <!-- Badly formed XML comment ignored for member "M:WebApplication1.Controllers.ValuesController.AddGoods(WebApplication1.ViewModels.ShoppingCart)" -->
+        <member name="M:WebApplication1.MiddleWare.MyMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,WebApplication1.MiddleWare.ITransientService,WebApplication1.MiddleWare.ISingletonService)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+            <param name="transientService"></param>
+            <param name="singletonService"></param>
+        </member>
     </members>
 </doc>
