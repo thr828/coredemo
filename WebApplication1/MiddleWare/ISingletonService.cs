@@ -2,5 +2,6 @@
 {
     public interface ISingletonService
     {
+        void Say(string text);
     }
 }

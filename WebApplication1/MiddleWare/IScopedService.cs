@@ -2,5 +2,6 @@
 {
     public interface IScopedService
     {
+        void Say(string text);
     }
 }

@@ -205,3 +205,5 @@ D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\WebApplication1.gen
 D:\HALCON\coredemo\coredemo\WebApplication1\obj\Debug\net6.0\ref\WebApplication1.dll
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Resources\WeatherForecast.en.json
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Resources\WeatherForecast.zh.json
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Elasticsearch.Net.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Nest.dll

@@ -2,5 +2,6 @@
 {
     public interface ITransientService
     {
+        void Say(string text);
     }
 }

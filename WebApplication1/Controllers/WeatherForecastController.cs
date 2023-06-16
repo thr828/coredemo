@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
+using WebApplication1.MiddleWare;
 
 namespace WebApplication1.Controllers
 {
@@ -8,23 +9,34 @@ namespace WebApplication1.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private readonly IStringLocalizer<WeatherForecast> _localizer;
+        private readonly ITransientService _transientService;
+        private readonly IScopedService _scopedService;
+
+        private readonly ISingletonService _singletonService;
+
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IStringLocalizer<WeatherForecast> localizer)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IStringLocalizer<WeatherForecast> localizer, ITransientService transientService, IScopedService scopedService, ISingletonService singletonService)
         {
             _logger = logger;
             _localizer = localizer;
+            _transientService = transientService;
+            _scopedService = scopedService;
+            _singletonService = singletonService;
         }
 
         [HttpGet]
         public string Get()
         {
-            return _localizer["hello"];
+            _transientService.Say("调用transientService");
+            _scopedService.Say("调用scopedService");
+            _singletonService.Say("调用SingletonService");
+            return "2222";
             //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             //{
             //    Date = DateTime.Now.AddDays(index),

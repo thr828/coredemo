@@ -8,12 +8,9 @@
         {
             return app =>
             {
-              app.Use((context, next) =>
-              {
-                  Console.WriteLine("First");
-                  return next();
-              });
-              next(app);
+                Console.WriteLine("First");
+                next(app);
+
             };
         }
     }
