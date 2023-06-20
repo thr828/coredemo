@@ -5,7 +5,7 @@
     </assembly>
     <members>
         <!-- Badly formed XML comment ignored for member "M:WebApplication1.Controllers.ValuesController.AddGoods(WebApplication1.ViewModels.ShoppingCart)" -->
-        <member name="M:WebApplication1.MiddleWare.MyMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,WebApplication1.MiddleWare.ITransientService,WebApplication1.MiddleWare.ISingletonService)">
+        <member name="M:WebApplication1.MiddleWare.MyMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,WebApplication1.MiddleWare.ITransientService,WebApplication1.MiddleWare.IScopedService,WebApplication1.MiddleWare.ISingletonService)">
             <summary>
             
             </summary>
