@@ -1,5 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Autofac.Extras.DynamicProxy;
 using Data;
 using DotNetCore.CAP;
 using IOC;
@@ -7,6 +8,7 @@ using Mapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +19,8 @@ using Swashbuckle.AspNetCore.Swagger;
 using System.Globalization;
 using System.Reflection;
 using System.Resources;
+using WebApplication1.AOP.Filters;
+using WebApplication1.AOP.Interceptors;
 using WebApplication1.Extensions;
 using WebApplication1.MiddleWare;
 
@@ -50,19 +54,32 @@ builder.Services.RegisterDependencies();//DI
 builder.Services.AddSingleton<ISingletonService, SingletonService>();
 builder.Services.AddTransient<ITransientService, TransientService>();
 builder.Services.AddScoped<IScopedService, ScopedService>();
-builder.Services.AddMvc();
+builder.Services.AddMvc(ops =>
+{ 
+    ops.Filters.Add<LogExceptionFilter>();//注入filter 后执行
+    ops.Filters.Add<MyExceptionFilter>();//先执行
+
+    ops.Filters.Add<MyActionFilter>();
+    ops.Filters.Add<MyActionFilter2>();
+    ops.Filters.Add<MyActionFilter3>();
+});
+
 
 var provider=builder.Services.BuildServiceProvider();
 
-//builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => {
-//    Assembly assembly = Assembly.Load("Data.dll");
-//    containerBuilder.RegisterAssemblyTypes(assembly)
-//    .AsImplementedInterfaces()
-//    .InstancePerDependency()
-//   // .AsSelf()
-//    .PropertiesAutowired()
-//    ;
-//});
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
+{
+    containerBuilder.RegisterType<AopCache>();//注入拦截器服务
+    containerBuilder.RegisterType<GetDataClass>().EnableClassInterceptors();
+
+    //Assembly assembly = Assembly.Load("Data.dll");
+    //containerBuilder.RegisterAssemblyTypes(assembly)
+    //.AsImplementedInterfaces()
+    //.InstancePerDependency()
+    //// .AsSelf()
+    //.PropertiesAutowired()
+    //;
+});
 
 
 //builder.Services.TryAdd(new ServiceDescriptor(typeof(ISingletonService), ServiceLifetime.Singleton));
@@ -97,7 +114,8 @@ builder.Services.AddCap(x => {
     {
         Console.WriteLine("需要人工处理了");
     };
-   // 设置发送消息的线程数据，大于1之后，不保证消息顺序 / a ProducerThreadCount = 1:/ 成功消息保存的时间，以秒为单位，默认是1天 / a.SucceedMessageExpiredAfter = 12 * 3600;
+   // 设置发送消息的线程数据，大于1之后，不保证消息顺序 / a ProducerThreadCount = 1:/ 成功消息保存的时间，以秒为单位，默认是1天 /
+   // a.SucceedMessageExpiredAfter = 12 * 3600;
 });
 
 builder.Services.AddSwaggerGen(option =>
@@ -138,6 +156,8 @@ builder.Services.AddJsonLocalization(setupAction => {
 });
 
 builder.Services.AddTransient<IStartupFilter, FirstStartupFilter>();
+
+
 
 
 var app = builder.Build();
@@ -194,8 +214,7 @@ app.UseWhen(context => context.Request.Path.StartsWithSegments("/WeatherForecast
     });
 });
 
-// 访问 /get 时会进入该管道分支
-// 访问 /get/xxx 时会进入该管道分支
+// 访问 /get 时会进入该管道分支 访问 /get/xxx 时会进入该管道分支
 app.Map("/get", app =>
 {
     app.Use(async (context, next) =>
@@ -225,20 +244,13 @@ app.Map("/get", app =>
 //        {
 //            Console.WriteLine("MapWhen get user: Use");
 
-//            await next();
-//        });
-//    });
+// await next(); }); });
 
-//    app.Use(async (context, next) =>
-//    {
-//        Console.WriteLine("MapWhen get: Use");
+// app.Use(async (context, next) => { Console.WriteLine("MapWhen get: Use");
 
-//        await next();
-//    });
+// await next(); });
 
-//    app.Run(async context =>
-//    {
-//        Console.WriteLine("MapWhen get: Run");
+// app.Run(async context => { Console.WriteLine("MapWhen get: Run");
 
 //        await context.Response.WriteAsync("Hello World!");
 //    });

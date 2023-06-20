@@ -4,8 +4,16 @@
         <name>WebApplication1</name>
     </assembly>
     <members>
+        <member name="M:WebApplication1.AOP.Filters.MyActionFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            </summary>
+            <param name="context"></param>
+            <param name="next">委托指向下一个 ActionFilter并执行</param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
         <!-- Badly formed XML comment ignored for member "M:WebApplication1.Controllers.ValuesController.AddGoods(WebApplication1.ViewModels.ShoppingCart)" -->
-        <member name="M:WebApplication1.MiddleWare.MyMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,WebApplication1.MiddleWare.ITransientService,WebApplication1.MiddleWare.IScopedService,WebApplication1.MiddleWare.ISingletonService)">
+        <member name="M:WebApplication1.MiddleWare.MyMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,WebApplication1.MiddleWare.ITransientService,WebApplication1.MiddleWare.ISingletonService)">
             <summary>
             
             </summary>

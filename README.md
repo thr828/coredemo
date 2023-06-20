@@ -1,6 +1,7 @@
 # coredemo
 # cap 监控地址：http://localhost:5180/cap/index.html
 # swagger地址：http://localhost:5180/swagger/index.html 
+
 # 技术栈：
 # EntityFramework Core
 # IOC(DI)
@@ -13,3 +14,12 @@
 # 1.Run用于注册终端中间件，Use用来注册匿名中间件，UseWhen、Map、MapWhen用于创建管道分支。
 # 2.UseWhen进入管道分支后，如果管道分支中不存在短路或终端中间件，则会返回到主管道。Map和MapWhen进入管道分支后，无论如何，都不会再返回到主管道。
 # 3.UseWhen和MapWhen基于逻辑条件来创建管道分支，而Map基于请求路径来创建管道分支，且会对HttpRequest.Path和HttpRequest.PathBase进行处理。
+
+# AOP
+# 1.Castle结合autofac实现拦截器
+# builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
+# {
+#    containerBuilder.RegisterType<AopCache>();//注入拦截器服务
+#     containerBuilder.RegisterType<GetDataClass>().EnableClassInterceptors();
+# });
+# 2.Filter过滤器 ASP.NET Core中的Filter的五种类型：Authorization filter、Resource filter、Action filter、Exception filter、Result filter。

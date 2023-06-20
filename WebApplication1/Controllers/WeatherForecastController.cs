@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
+using WebApplication1.AOP.Interceptors;
 using WebApplication1.MiddleWare;
 
 namespace WebApplication1.Controllers
@@ -11,6 +12,7 @@ namespace WebApplication1.Controllers
         private readonly IStringLocalizer<WeatherForecast> _localizer;
         private readonly ITransientService _transientService;
         private readonly IScopedService _scopedService;
+        private readonly GetDataClass _getDataClass;
 
         private readonly ISingletonService _singletonService;
 
@@ -21,13 +23,14 @@ namespace WebApplication1.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IStringLocalizer<WeatherForecast> localizer, ITransientService transientService, IScopedService scopedService, ISingletonService singletonService)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IStringLocalizer<WeatherForecast> localizer, ITransientService transientService, IScopedService scopedService, ISingletonService singletonService, GetDataClass getDataClass)
         {
             _logger = logger;
             _localizer = localizer;
             _transientService = transientService;
             _scopedService = scopedService;
             _singletonService = singletonService;
+            _getDataClass = getDataClass;
         }
 
         [HttpGet]
@@ -36,7 +39,8 @@ namespace WebApplication1.Controllers
             _transientService.Say("调用transientService");
             _scopedService.Say("调用scopedService");
             _singletonService.Say("调用SingletonService");
-            return "2222";
+            var time= _getDataClass.GetTime();
+            return time;
             //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             //{
             //    Date = DateTime.Now.AddDays(index),

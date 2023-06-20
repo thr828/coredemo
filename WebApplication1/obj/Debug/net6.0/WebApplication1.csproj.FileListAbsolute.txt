@@ -207,3 +207,7 @@ D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Resources\WeatherFo
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Resources\WeatherForecast.zh.json
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Elasticsearch.Net.dll
 D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Nest.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Autofac.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Castle.Core.dll
+D:\HALCON\coredemo\coredemo\WebApplication1\bin\Debug\net6.0\Autofac.Extras.DynamicProxy.dll
